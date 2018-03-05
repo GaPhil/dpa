@@ -1,6 +1,6 @@
 # Differential Power Analysis (DPA)
 
-This repository contatins the code for the [Hardware Security](https://www.kth.se/student/kurser/kurs/IL1333?l=en) course taught at KTH Royal Institue of Technology.
+This repository contains the code for the [Hardware Security](https://www.kth.se/student/kurser/kurs/IL1333?l=en) course taught at KTH Royal Institue of Technology.
 
 #### Side Channel Attack: Differential Power Analysis (DPA) on AES encryption algorithm to deduce secret keys
 
