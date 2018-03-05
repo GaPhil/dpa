@@ -52,10 +52,14 @@ ciphertext = myin('ciphertext_unknown_key.txt', columns, rows);
 
 firstround = 7000;
 
-subplot(3, 1, 1), plot(mean(traces));                          % plot mean of all traces
-subplot(3, 1, 2), plot(mean(traces( : , 1 : firstround)));     % first round
-subplot(3, 1, 3), plot(mean(traces( : , 1 : firstround)'));    % first round transpose
-
+% subplot(2, 1, 1), plot(smooth(mean(traces), 100));                          % plot mean of all traces
+% xlabel("Sample number");
+% ylabel("Relative power");
+% title("Full trace");
+% subplot(2, 1, 2), plot(smooth(mean(traces( : , 1 : firstround)), 100));     % first round
+% xlabel("Sample number");
+% ylabel("Relative power");
+% title("First round trace");
 
 %%%%%%%%%%%%%%%%
 % Key recovery %
@@ -112,5 +116,4 @@ end
 
 for i = 1 : 16
     fprintf ( "Byte %d of the key is 0x%2.2X \n ", i , result(i) );
-%     fprintf ( "%2.2X ", result(i) );
 end
