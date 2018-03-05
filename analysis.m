@@ -67,24 +67,22 @@ title("First round trace");
 
 % Create the power hypothesis for each byte of the key and then correlate
 % the hypothesis with the power traces to extract the key.
-% Task consists of the following parts :
+% Task consists of the following parts:
 % - create the power hypothesis
 % - extract the key using the results of the mycorr function
-% variables declaration
 byteStart = 1;
 byteEnd = 16;
 keyCandidateStart = 0;
 keyCandidateStop = 255;
 result = zeros(1, 16);
 
-% for every byte in the key do :
+% for every byte in the key do:
 for BYTE = byteStart : byteEnd
 % Create the power hypothesis matrix (dimensions: rows = numberOfTraces, columns = 256).
 % The number 256 represents all possible bytes (e.g., 0x00..0xFF).
 powerHypothesis = zeros(numberOfTraces, 256);
     for K = keyCandidateStart : keyCandidateStop
         for N = 1 : numberOfTraces
-        % -- > create the power hypothesis here < --
             XOR = bitxor(plaintext(N, BYTE), K);
             sboxVal = SBOX(XOR + 1);
             Hw = byte_Hamming_weight(sboxVal + 1);
@@ -96,7 +94,7 @@ powerHypothesis = zeros(numberOfTraces, 256);
 % measured power traces. The resulting correlation coeficients stored in
 % the matrix CC are later used to extract the correct key.
     CC = mycorr(powerHypothesis, traces);
-% -- > do some operations here to find the correct byte of the key < --
+% find the correct byte of the key
 
 keyVal = 0;
 segIndex = 0;
