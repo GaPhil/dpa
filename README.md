@@ -1,4 +1,4 @@
-# kth-il1333
+# Differential Power Analysis (DPA)
 Side Channel Attack: Differential Power Analysis (DPA) on AES encryption algorithm to deduce secret keys
 
 DPA can be performed as follows:
