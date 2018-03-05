@@ -12,9 +12,11 @@ DPA can be performed as follows:
 * Using a power model, compute the matrix of hypothetical power consumption for all keys and traces h<sub>i, k</sub>
 * Statistically evaluate which key hypothesis best matches the measured power at each individual time
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AES-AddRoundKey.svg/810px-AES-AddRoundKey.svg.png" width="500">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AES-SubBytes.svg/810px-AES-SubBytes.svg.png" width="500">
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AES-AddRoundKey.svg/810px-AES-AddRoundKey.svg.png" width="300"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AES-SubBytes.svg/810px-AES-SubBytes.svg.png" width="300">
+</p>
 
-<img src="https://github.com/GaPhil/kth-il1333/blob/master/traces.png" width="500">
-
+<p align="center">
+<img src="https://github.com/GaPhil/kth-il1333/blob/master/traces.png" width="400">
+</p>
