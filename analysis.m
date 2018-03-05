@@ -52,14 +52,14 @@ ciphertext = myin('ciphertext_unknown_key.txt', columns, rows);
 
 firstround = 7000;
 
-% subplot(2, 1, 1), plot(smooth(mean(traces), 100));                          % plot mean of all traces
-% xlabel("Sample number");
-% ylabel("Relative power");
-% title("Full trace");
-% subplot(2, 1, 2), plot(smooth(mean(traces( : , 1 : firstround)), 100));     % first round
-% xlabel("Sample number");
-% ylabel("Relative power");
-% title("First round trace");
+subplot(2, 1, 1), plot(smooth(mean(traces), 100));                          % plot mean of all traces
+xlabel("Sample number");
+ylabel("Relative power");
+title("Full trace");
+subplot(2, 1, 2), plot(smooth(mean(traces( : , 1 : firstround)), 100));     % first round
+xlabel("Sample number");
+ylabel("Relative power");
+title("First round trace");
 
 %%%%%%%%%%%%%%%%
 % Key recovery %
