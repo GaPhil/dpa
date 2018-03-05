@@ -1,5 +1,8 @@
 # Differential Power Analysis (DPA)
-Side Channel Attack: Differential Power Analysis (DPA) on AES encryption algorithm to deduce secret keys
+
+This repository contatins the code for the [Hardware Security](https://www.kth.se/student/kurser/kurs/IL1333?l=en) course taught at KTH Royal Institue of Technology.
+
+#### Side Channel Attack: Differential Power Analysis (DPA) on AES encryption algorithm to deduce secret keys
 
 DPA can be performed as follows:
 
@@ -13,6 +16,5 @@ DPA can be performed as follows:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AES-SubBytes.svg/810px-AES-SubBytes.svg.png" width="500">
 
-
-
 <img src="https://github.com/GaPhil/kth-il1333/blob/master/traces.png" width="500">
+
